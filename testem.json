@@ -1,6 +1,5 @@
 {
   "framework" : "mocha",
-  "before_tests": "grunt test:browser",
   "src_files" : [
     "lib/**/*.js",
     "test/**/*.test.js"
@@ -12,9 +11,11 @@
     "build/jsforce-api-bulk.js",
     "build/jsforce-api-chatter.js",
     "build/jsforce-api-metadata.js",
+    "build/jsforce-api-soap.js",
     "build/jsforce-api-streaming.js",
     "build/jsforce-api-tooling.js",
-    "build/test/**/*.test.js"
+    "build/test.js"
   ],
+  "launch_in_dev" : [ "PhantomJS" ],
   "launch_in_ci" : [ "PhantomJS" ]
 }
